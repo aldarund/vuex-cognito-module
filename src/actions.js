@@ -4,8 +4,12 @@ export default {
   fetchSession: ({ commit }) =>
     new Promise((resolve, reject) => {
       Auth.currentSession().then(session => {
-        commit('setSession', session)
-        resolve(session)
+        Auth.currentUserPoolUser()
+          .then(user => {
+            commit('setUser', user)
+            commit('setSession', session)
+            resolve(session)
+          }).catch(reject)
       }).catch(reject)
     }),
   signInUser: ({ commit }, credentials) =>

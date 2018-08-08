@@ -62898,8 +62898,11 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
     commit
   }) => new Promise((resolve, reject) => {
     lib["Auth"].currentSession().then(session => {
-      commit('setSession', session);
-      resolve(session);
+      lib["Auth"].currentUserPoolUser().then(user => {
+        commit('setUser', user);
+        commit('setSession', session);
+        resolve(session);
+      }).catch(reject);
     }).catch(reject);
   }),
   signInUser: ({
