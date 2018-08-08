@@ -1,5 +1,5 @@
 {
-  "name": "vuex-cognito-module-new",
+  "name": "vuex-cognito-module",
   "version": "0.1.0",
   "private": true,
   "main": "dist/vuex-cognito-module.umd.min.js",
