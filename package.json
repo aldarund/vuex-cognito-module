@@ -1,7 +1,6 @@
 {
   "name": "@vuetify/vuex-cognito-module",
   "version": "0.1.0",
-  "private": true,
   "main": "dist/vuex-cognito-module.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
