@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-# /dist uncomment when we make this a package
+/dist
 
 # local env files
 .env.local
