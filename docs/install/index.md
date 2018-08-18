@@ -2,8 +2,6 @@
 
 Vuex module to interface with AWS Cognito
 
-Docs Link: Coming Soon!
-
 Install:
 ```bash
 yarn add @vuetify/vuex-cognito-module

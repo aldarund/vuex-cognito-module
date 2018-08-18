@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vuex-cognito-module src/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "aws-amplify": "^1.0.5"
@@ -16,7 +18,8 @@
     "@vue/cli-service": "^3.0.0-rc.11",
     "@vue/eslint-config-standard": "^3.0.0-rc.11",
     "lint-staged": "^7.2.0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "vuepress": "^0.14.2"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
