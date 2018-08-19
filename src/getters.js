@@ -1,8 +1,10 @@
-export default {
+module.exports = {
   // TODO: ensure best method to verify this
-  isLoggedIn: store => Boolean(
-    store.session &&
-    store.session.accessToken &&
-    store.session.accessToken.jwtToken
-  )
+  isLoggedIn: (store = {}) => {
+    return Boolean(
+      store.session &&
+      store.session.accessToken &&
+      store.session.accessToken.jwtToken
+    )
+  }
 }

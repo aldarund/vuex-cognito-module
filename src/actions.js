@@ -30,7 +30,7 @@ export default {
         username: credentials.username,
         password: credentials.password,
         attributes: credentials.attributes
-      }).then((user) => {
+      }).then(user => {
         commit('setUser', user)
         commit('setSession', user.signInUserSession)
 
@@ -39,25 +39,25 @@ export default {
         resolve(user)
       }).catch(reject)
     }),
-  confirmUser: (context, data) =>
+  confirmUser: (_, data) =>
     new Promise((resolve, reject) => {
       Auth.confirmSignUp(data.username, data.code)
         .then(resolve)
         .catch(reject)
     }),
-  resendConfirmation: (context, data) =>
+  resendConfirmation: (_, data) =>
     new Promise((resolve, reject) => {
       Auth.resendSignUp(data.username)
         .then(resolve)
         .catch(reject)
     }),
-  forgotPassword: ({ commit }, data) =>
+  forgotPassword: (_, data) =>
     new Promise((resolve, reject) => {
       Auth.forgotPassword(data.username)
         .then(resolve)
         .catch(reject)
     }),
-  changePassword: ({ commit }, data) =>
+  changePassword: (_, data) =>
     new Promise((resolve, reject) => {
       Auth.forgotPasswordSubmit(
         data.username,
@@ -67,12 +67,10 @@ export default {
         .then(resolve)
         .catch(reject)
     }),
-  signOut: ({ commit, getters, state }, data) =>
+  signOut: ({ commit, getters }) =>
     new Promise((resolve, reject) => {
       if (!getters.isLoggedIn) {
-        // reject({
-        //   message: 'User not logged in.'
-        // })
+        reject(new Error('User not logged in.'))
       }
 
       Auth.signOut()
@@ -88,29 +86,16 @@ export default {
     }),
   init ({ commit }, config) {
     if (![
-      'UserPoolId',
-      'IdentityPoolId',
-      'ClientId',
-      'Region'
+      'userPoolId',
+      'identityPoolId',
+      'userPoolWebClientId',
+      'region'
     ].every(opt => Boolean(config[opt]))) {
-      throw new Error('UserPoolId, IdentityPoolId, ClientId and Region are required in the config object.')
+      throw new Error('userPoolId, identityPoolId, userPoolWebClientId and region are required in the config object.')
     }
 
-    Amplify.configure({
-      Auth: {
-        // REQUIRED - Amazon Cognito Identity Pool ID
-        identityPoolId: config.IdentityPoolId,
-        // REQUIRED - Amazon Cognito Region
-        region: config.Region,
-        // OPTIONAL - Amazon Cognito User Pool ID
-        userPoolId: config.UserPoolId,
-        // OPTIONAL - Amazon Cognito Web Client ID (26-char alphanumeric string)
-        userPoolWebClientId: config.ClientId,
-        // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
-        mandatorySignIn: false
-      }
-    })
+    Amplify.configure({ Auth: config })
 
-    commit('setConfig', () => config)
+    commit('setConfig', config)
   }
 }
