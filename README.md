@@ -16,9 +16,9 @@ Attach cognito module to the store
 ```js
 import store from './store';
 attachCognitoModule(store, {
-  UserPoolId: 'your-data-here',
-  IdentityPoolId: 'your-data-here',
-  ClientId: 'your-data-here',
-  Region: 'your-data-here',
+  userPoolId: 'your-data-here',
+  identityPoolId: 'your-data-here',
+  userPoolWebClientId: 'your-data-here',
+  region: 'your-data-here',
 }, 'cognito')
 ```
