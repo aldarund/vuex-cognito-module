@@ -1,4 +1,5 @@
-import Amplify, { Auth } from 'aws-amplify'
+import Auth from '@aws-amplify/auth'
+import Amplify from '@aws-amplify/core'
 
 export default {
   fetchSession: ({ commit }) =>
