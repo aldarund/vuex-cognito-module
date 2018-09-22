@@ -1,5 +1,8 @@
-export default {
-  config: null,
-  session: {},
-  user: {}
+const state = () => {
+  return {
+    config: null,
+    session: {},
+    user: {}
+  }
 }
+export default state
