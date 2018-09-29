@@ -2,24 +2,24 @@
 # yarn lockfile v1
 
 
-"@aws-amplify/auth@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@aws-amplify/auth/-/auth-1.2.3.tgz#56d9b19e8cb2d2a2645f1bfd3da5a3a33190e4a9"
+"@aws-amplify/auth@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@aws-amplify/auth/-/auth-1.2.4.tgz#7004b060b79e85c015d930da06e0013dbece423d"
   dependencies:
-    "@aws-amplify/cache" "^1.0.12"
-    "@aws-amplify/core" "^1.0.12"
+    "@aws-amplify/cache" "^1.0.13"
+    "@aws-amplify/core" "^1.0.13"
     amazon-cognito-auth-js "^1.1.9"
-    amazon-cognito-identity-js "^2.0.29"
+    amazon-cognito-identity-js "^2.0.30"
 
-"@aws-amplify/cache@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@aws-amplify/cache/-/cache-1.0.12.tgz#7ec9f6f2872666bd386df482a2c975b6cce16e45"
+"@aws-amplify/cache@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@aws-amplify/cache/-/cache-1.0.13.tgz#69e194998bb6c4a5b69af74924abfd6314482a21"
   dependencies:
-    "@aws-amplify/core" "^1.0.12"
+    "@aws-amplify/core" "^1.0.13"
 
-"@aws-amplify/core@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@aws-amplify/core/-/core-1.0.12.tgz#21a2a6befc8d087e39ebbc76f83e456de0e6b902"
+"@aws-amplify/core@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@aws-amplify/core/-/core-1.0.13.tgz#6303e65613e5b43849a9be516f475289a14f26ad"
   dependencies:
     aws-sdk "^2.312.0"
     url "^0.11.0"
@@ -681,9 +681,9 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@vue/babel-preset-app@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-3.0.1.tgz#24188938e93f259f7141a6a1190da9c511d123d8"
+"@vue/babel-preset-app@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-3.0.4.tgz#5702e18b118b0a91a8aa988be5eefcb8245c8b87"
   dependencies:
     "@babel/plugin-proposal-class-properties" "7.0.0-beta.47"
     "@babel/plugin-proposal-decorators" "7.0.0-beta.47"
@@ -696,35 +696,35 @@
     babel-plugin-dynamic-import-node "^2.0.0"
     babel-plugin-transform-vue-jsx "^4.0.1"
 
-"@vue/cli-overlay@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli-overlay/-/cli-overlay-3.0.2.tgz#18411420798135295fe80523579b22e4c6bb3d3b"
+"@vue/cli-overlay@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@vue/cli-overlay/-/cli-overlay-3.0.4.tgz#6d5640021906d35e5572c186c3f35b4e7a93c247"
 
-"@vue/cli-plugin-babel@^3.0.1":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-3.0.3.tgz#967ef902553c1c6152ef6330cb05816a730dfdb5"
+"@vue/cli-plugin-babel@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-3.0.4.tgz#f2e4a12f498e285fdc605ad29df4b9b0d4a0eb10"
   dependencies:
     "@babel/core" "7.0.0-beta.47"
-    "@vue/babel-preset-app" "^3.0.1"
+    "@vue/babel-preset-app" "^3.0.4"
     babel-loader "^8.0.0-0"
 
-"@vue/cli-plugin-eslint@^3.0.1":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-3.0.3.tgz#728daadd5d3b8af69679c7dcbc63b7f8d00e6c0c"
+"@vue/cli-plugin-eslint@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-3.0.4.tgz#0c62607c44a3b63fc730fdc0dd0ad5165bc559f6"
   dependencies:
-    "@vue/cli-shared-utils" "^3.0.2"
+    "@vue/cli-shared-utils" "^3.0.4"
     babel-eslint "^8.2.5"
     eslint "^4.19.1"
     eslint-loader "^2.0.0"
     eslint-plugin-vue "^4.5.0"
 
-"@vue/cli-service@^3.0.1":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.0.3.tgz#dd91f2ee40922001559601d458209e4398887337"
+"@vue/cli-service@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.0.4.tgz#0084569470a742a3c9adf32e8815c4760eaafd96"
   dependencies:
     "@intervolga/optimize-cssnano-plugin" "^1.0.5"
-    "@vue/cli-overlay" "^3.0.2"
-    "@vue/cli-shared-utils" "^3.0.2"
+    "@vue/cli-overlay" "^3.0.4"
+    "@vue/cli-shared-utils" "^3.0.4"
     "@vue/preload-webpack-plugin" "^1.1.0"
     "@vue/web-component-wrapper" "^1.2.0"
     acorn "^5.7.1"
@@ -772,9 +772,9 @@
     webpack-merge "^4.1.3"
     yorkie "^2.0.0"
 
-"@vue/cli-shared-utils@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.0.2.tgz#d4c734060ac994fadf0fc0c48883c7931a72c4ff"
+"@vue/cli-shared-utils@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.0.4.tgz#055a6eec7dd5d0392bec1547a0199ccc008ccc06"
   dependencies:
     chalk "^2.4.1"
     execa "^0.10.0"
@@ -803,9 +803,9 @@
     source-map "^0.5.6"
     vue-template-es2015-compiler "^1.6.0"
 
-"@vue/eslint-config-standard@^3.0.1":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@vue/eslint-config-standard/-/eslint-config-standard-3.0.3.tgz#a8a49641682b050de0f49f1c4be878e013c01949"
+"@vue/eslint-config-standard@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@vue/eslint-config-standard/-/eslint-config-standard-3.0.4.tgz#e7bb75f880d9996bbc5185f6733df95fb44282d2"
   dependencies:
     eslint-config-standard "^12.0.0-alpha.0"
     eslint-plugin-import "^2.11.0"
@@ -1033,9 +1033,9 @@ amazon-cognito-auth-js@^1.1.9:
   dependencies:
     js-cookie "^2.1.4"
 
-amazon-cognito-identity-js@^2.0.29:
-  version "2.0.29"
-  resolved "https://registry.yarnpkg.com/amazon-cognito-identity-js/-/amazon-cognito-identity-js-2.0.29.tgz#0d02b836432ed22725b97963ff7dbfe3db02f9e8"
+amazon-cognito-identity-js@^2.0.30:
+  version "2.0.30"
+  resolved "https://registry.yarnpkg.com/amazon-cognito-identity-js/-/amazon-cognito-identity-js-2.0.30.tgz#120d16ec15bf980e64d05911bb755662fc1a9af1"
   dependencies:
     buffer "4.9.1"
     crypto-browserify "1.0.9"
