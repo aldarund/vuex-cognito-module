@@ -96,7 +96,5 @@ export default {
     }
 
     Amplify.configure({ Auth: config })
-
-    commit('setConfig', config)
   }
 }

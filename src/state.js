@@ -1,6 +1,5 @@
 const state = () => {
   return {
-    config: null,
     session: {},
     user: {}
   }
